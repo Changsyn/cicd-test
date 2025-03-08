@@ -13,4 +13,6 @@ jobs:
           echo "Hi" > /home/runner/test_folder/sample.txt
       - name: 워킹 디렉토리 변경
         working-directory: /home/runner
-        run: pwd
+        run: |
+          pwd
+          cat sample.txt
